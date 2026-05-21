@@ -44,13 +44,13 @@ A native GNU/Linux toolchain (`gcc`) is highly recommended for building these sy
 
 ```bash
 # Compile Homework 1 (Multiprocess & Pipes)
-gcc -g HW1_Multiprocess/main.c -o HW1_Multiprocess/main
+gcc -g hw1-382/main.c -o hw1-382/main
 
 # Compile Homework 2 (Multi-threading & Semaphores)
-gcc -g HW2_Synchronization/hw2_main.c -o HW2_Synchronization/hw2_main -lpthread
+gcc -g hw2-382/hw2_main.c -o hw2-382/hw2_main -lpthread
 
 # Compile Homework 3 (Reader-Writer with Passwords)
-gcc -g HW3_ReaderWriter/hw3_main.c -o HW3_ReaderWriter/hw3_main -lpthread
+gcc -g hw3-382/hw3_main.c -o hw3-382/hw3_main -lpthread
 
 ```
 
@@ -58,14 +58,14 @@ gcc -g HW3_ReaderWriter/hw3_main.c -o HW3_ReaderWriter/hw3_main -lpthread
 
 ```bash
 # Execution for Homework 1
-./HW1_Multiprocess/main
+./hw1-382/main
 
 # Execution for Homework 2 (Process 'myDir' using maximum 4 parallel threads)
-chmod +x HW2_Synchronization/new.sh
-./HW2_Synchronization/new.sh   # Generates sample data directory 'myDir'
-time ./HW2_Synchronization/hw2_main myDir 4
+chmod +x hw2-382/new.sh
+./hw2-382/new.sh   # Generates sample data directory 'myDir'
+time ./hw2-382/hw2_main myDir 4
 
 # Execution for Homework 3
-./HW3_ReaderWriter/hw3_main
+./hw3-382/hw3_main
 
 ```
